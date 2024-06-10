@@ -14,9 +14,9 @@ public class Gold extends Member implements Buyable{
         double pointResult = getPoint() * 0.05;
         return pointResult;
     }
-
+    @Override
     public int buy (int price) {
-
-        return 0;
+        double discount = price * 0.05;
+        return (int)(price - discount);
     }
 }

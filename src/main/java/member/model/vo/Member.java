@@ -1,6 +1,6 @@
 package member.model.vo;
 
-public abstract class Member {
+public abstract class Member implements Buyable {
 
     private String name;
     private String grade;
@@ -42,4 +42,5 @@ public abstract class Member {
     public double calculateInterest() {
         return 0;
     }
+
 }
