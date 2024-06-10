@@ -8,8 +8,10 @@ public class Sliver extends Member implements Buyable {
         super(name, grade, point);
     }
 
+    @Override
     public double calculateInterest() {
-        return 0;
+        double pointResult = getPoint() * 0.02;
+        return pointResult;
     }
 
     public int buy (int price) {

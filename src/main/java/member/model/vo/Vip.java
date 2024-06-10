@@ -8,8 +8,10 @@ public class Vip extends Member implements Buyable{
         super(name, grade, point);
     }
 
+    @Override
     public double calculateInterest() {
-        return 0;
+        double pointResult = getPoint() * 0.1;
+        return pointResult;
     }
 
     public int buy (int price) {
