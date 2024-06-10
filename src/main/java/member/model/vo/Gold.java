@@ -6,14 +6,17 @@ public class Gold extends Member implements Buyable{
     }
 
     public Gold(String name, String grade, int point) {
+
         super(name, grade, point);
     }
-
+    @Override
     public double calculateInterest() {
-        return 0;
+        double pointResult = getPoint() * 0.05;
+        return pointResult;
     }
 
     public int buy (int price) {
+
         return 0;
     }
 }
