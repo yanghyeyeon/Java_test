@@ -1,10 +1,10 @@
 package member.model.vo;
 
-public class Sliver extends Member implements Buyable {
-    public Sliver() {
+public class Silver extends Member implements Buyable {
+    public Silver() {
     }
 
-    public Sliver(String name, String grade, int point) {
+    public Silver(String name, String grade, int point) {
         super(name, grade, point);
     }
 

@@ -14,8 +14,12 @@ public class MemberRepository {
 
     }
 
-    public void insertMember (Member member) {
+    public void insertMember (Member m) throws OverMemberException {
+        Members.add(m);
 
+        if(Members.size() > 10) {
+            throw new OverMemberException("Member List is full");
+        }
 
     }
     public void printData(){
